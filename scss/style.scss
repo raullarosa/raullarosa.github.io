@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700,900);
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_navbar.scss"; 
+
+.parallax-section{
+    background: url('../images/bg-1.jpg') no-repeat;
+    height: 100%;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.parallax-inner{
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .parallax-content{
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        h1{
+            text-transform: capitalize;
+            color:#fff;
+            font-weight: 900;
+            font-size: 80px;
+        }
+        h2{
+            text-transform: uppercase;
+            color:#fff;
+            font-weight: 100;
+            font-size: 60px;
+        }
+        .flexslider{
+            margin: 0px;
+            border: 0px;
+            background: transparent;
+        }
+    }
+}
+
+/**about section**/
+.about-section{
+    padding: 100px 0;
+    background: #222;
+    h1{
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 45px;
+        span{
+            color: $skincolor;
+            font-weight: 700;
+        }
+    }
+}
+
+/**portfolio section**/
+.portfolio{
+    padding: 100px 0;
+    padding-bottom: 0px;
+    background: $skincolor;
+    .separator{
+        background-color: #fff;
+    }
+    .col-sm-4{
+        padding:0px;
+    }
+}
+.folio-box{
+    overflow: hidden;
+    position: relative;
+}
+.folio-box img{
+    @include transition(all 0.3s);
+}
+.folio-box:hover img{
+    @include transform(scale(1.1));
+}
+.folio-desc{
+    padding: 15px;
+    color:#666;
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    h4{
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        color:#000;
+    }
+    p{
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+/**services**/
+.services-section{
+    padding: 100px 0;
+    padding-bottom: 70px;
+    background-color: #333;
+}
+.service-list{
+    li{
+        padding: 15px;
+    }
+    i{
+        float: left;
+        display: block;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border: 1px solid rgba(255,255,255,0.1);
+        text-align: center;
+        @include border-radius(50%);
+        margin-right: 20px;
+        font-size: 35px;
+        color: $skincolor;
+    }
+    .content{
+        overflow: hidden;
+        h3{
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/**testimonials**/
+.testimonials{
+    padding: 100px 0;
+    position:relative;
+    background:url('../images/bg-2.jpg') no-repeat;
+    background-size:cover;
+    background-position:center center;
+
+    .flex-control-nav{
+        width: 100%;
+        left: 0;
+    }
+    .flex-control-paging li a{
+        width: 7px;
+        height: 7px;
+        @include box-shadow(none);
+        background-color: #aeaeae;
+        &.flex-active{
+            background-color: #fff;
+        }
+    }
+    .testi-slider{
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            font-style: italic;
+            color:#fff;
+        }
+        h5{
+            margin-top: 5px;
+        }
+    }
+}
+
+
+/**contact section**/
+.contact-section{
+    padding: 100px 0;
+    padding-bottom: 70px;
+    background: #222;
+    .separator{
+        background: #fff;
+    }
+    .form-control{
+        border: 0px;
+        @include border-radius(0px);
+        @include box-shadow(none);
+        min-height: 45px;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+        background: transparent;
+        color:#fff;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: rgba(255,255,255,0.4);
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: rgba(255,255,255,0.4);
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: rgba(255,255,255,0.4);
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: rgba(255,255,255,0.4);
+        }
+        &:focus{
+            border-bottom-color: rgba(255,255,255,0.8);
+        }
+    }
+    ul li a{
+        font-size: 30px;
+    }
+}
+.alert{
+    position: relative;
+    .close{
+       opacity: 1;
+       font-size: 20px;
+    }
+}
+.footer{
+    background: $skincolor;
+    padding: 10px 0;
+    color:#fff;
+}
+@media(max-width:767px){
+    .parallax-inner .parallax-content{
+        h2{
+            font-size: 25px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+}
