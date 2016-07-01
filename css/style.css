@@ -1,0 +1,29 @@
+html {
+  background-color: #FFF; }
+
+.nav {
+  padding-top: 5vh; }
+
+body {
+  height: 100vh;
+  width: 100vw; }
+
+#home {
+  font-style: italic;
+  color: #C62A28;
+  display: inline; }
+
+#about {
+  text-align: right;
+  display: inline; }
+  #about :hover {
+    color: #C62A28; }
+
+#contact {
+  bottom: 120px; }
+  #contact h1 {
+    font-size: 15px; }
+
+.rotated {
+  transform: rotateZ(-90deg);
+  transform-origin: 0 0; }

@@ -1,0 +1,47 @@
+$padding: 5px;
+$myColor: #C62A28;
+$bgColor: #FFF;
+
+html {
+    background-color: $bgColor;
+}
+
+.nav{
+    padding-top: 5vh;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#home {
+    font-style: italic;
+    color: $myColor;
+    display: inline;
+}
+
+#about{
+    text-align: right;
+    display: inline;
+
+    :hover{
+        color: $myColor;
+    }
+}
+
+#contact{
+    bottom:120px;
+
+    h1{
+        font-size: 15px;
+    }
+}
+
+#intro {
+}
+
+.rotated{
+    transform: rotateZ(-90deg);
+    transform-origin: 0 0;
+}
