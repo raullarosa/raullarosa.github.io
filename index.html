@@ -7,20 +7,32 @@
 
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!-- Import Roboto Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,400italic,300italic,100italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    crossorigin="anonymous">
+
   <!--Import Custom CSS-->
   <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Import jQuery before bootstrap.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
 
   <!-- Import Dependencies-->
-  <script type="text/javascript" src="js/react.js"></script>
+  <!--<script type="text/javascript" src="js/react.js"></script>
   <script type="text/javascript" src="js/react-dom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>-->
 
   <!-- Import Custom JS-->
   <script type="text/javascript" src="js/index.js"></script>
@@ -30,14 +42,32 @@
 <body>
   <div class="container">
     <!-- Nav -->
-    <div class="row nav">
-      <p id="home" class="col s2">Raul La Rosa</p>
-      <p id="about" class="col s1 push-s8">About</p>
+    <div class="nav">
+      <p id="home" class="col-md-2">Raul La Rosa</p>
+      <p id="about" class="col-md-1 col-md-offset-9">About</p>
     </div>
 
-    <!-- Intro -->
-    <div id="intro">
+    <!-- Main -->
+    <div id="main" class="">
+      <!-- Logo -->
+      <div class="col-md-4 col-md-offset-1">
+        <img src="img/logo.png" alt="R">
 
+      </div>
+
+      <!-- Titles-->
+      <div class="col-md-6">
+        <p>Friend</p>
+        <p>Student</p>
+        <p>UI Designer</p>
+        <p>Web Developer</p>
+        <p>Community Leader</p>
+      </div>
+
+      <!-- Projects -->
+      <div id="project">
+
+      </div>
     </div>
 
     <!-- Contact -->
@@ -46,6 +76,3 @@
     </div>
   </div>
 </body>
-<footer>
-
-</footer>
