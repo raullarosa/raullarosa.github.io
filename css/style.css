@@ -1,51 +1,46 @@
-.nav {
-  padding-top: 5vh;
-  height: 25vh; }
-  .nav p {
-    font-size: 20px;
-    font-family: 'Roboto', 'sans-serif';
-    color: white; }
-    .nav p :hover {
-      color: #C62A28; }
-
 body {
-  width: 100vw;
-  background-color: black; }
+  background-color: black;
+  padding-left: 5vw;
+  padding-right: 5vw; }
 
-#home {
-  font-style: italic;
-  color: #C62A28;
-  display: inline; }
+.header {
+  padding-top: 5vh;
+  height: 20vh;
+  position: fixed; }
+  .header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Roboto', 'sans-serif';
+    color: #C62A28; }
 
-#about {
-  text-align: right;
-  display: inline; }
-
-#contact {
-  height: 10vh; }
-  #contact h1 {
+.contact {
+  height: 5vh;
+  bottom: 5vh;
+  position: fixed; }
+  .contact p {
     font-family: 'Roboto', 'sans-serif';
     color: white;
     font-size: 20px; }
-
-#main {
-  height: 65vh;
-  color: white; }
-  #main .col-md-4 {
-    height: 100%; }
-  #main .col-md-6 {
-    height: 100%; }
-    #main .col-md-6 p {
-      font-size: 56px;
-      color: white;
-      font-family: 'Roboto', 'sans-serif';
-      margin: 0 0 0px; }
-
-#logo {
-  font-size: 350px;
-  font-weight: bold;
-  color: #C62A28; }
+    .contact p:hover {
+      transition: 1s;
+      color: #C62A28; }
 
 .rotated {
   transform: rotateZ(-90deg);
   transform-origin: 0 0; }
+
+#welcome {
+  padding-top: 25vh; }
+
+.titles p {
+  font-size: 56px;
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  margin: 0 0 0px; }
+
+.block {
+  padding: 0;
+  width: 90vw;
+  height: 100vh;
+  padding-left: 10vw; }

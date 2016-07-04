@@ -1,78 +1,66 @@
 $padding: 5px;
 $myColor: #C62A28;
 $bgColor: black;
+$txtColor: white;
 
-.nav{
+body {
+    background-color: $bgColor; 
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.header{
     padding-top: 5vh;
-    height: 25vh;
+    height: 20vh;
+    position: fixed;
 
-    p { 
-        font-size: 20px; 
+    a { 
+        text-decoration: none;
+        font-size: 20px;
+        font-style: italic;
         font-family: 'Roboto', 'sans-serif';
-        color: white;
+        color: $myColor;
+    }
+}
 
-        :hover{
+.contact{
+    height: 5vh;
+    bottom: 5vh;
+    position: fixed;
+
+    p{
+        font-family: 'Roboto', 'sans-serif';
+        color: $txtColor;
+        font-size: 20px;
+
+        &:hover{
+            transition: 1s;
             color: $myColor;
         }
     }
 }
 
-body {
-    width: 100vw;
-    background-color: $bgColor; 
-}
-
-#home {
-    font-style: italic;
-    color: $myColor;
-    display: inline;
-}
-
-#about{
-    text-align: right;
-    display: inline;
-}
-
-#contact{
-    height: 10vh;
-
-    h1{
-        font-family: 'Roboto', 'sans-serif';
-        color: white;
-        font-size: 20px;
-    }
-}
-
-#main {
-    height: 65vh;
-    color: white;
-
-    .col-md-4{
-        height: 100%;
-    }
-
-    .col-md-6{
-        height: 100%;
-        p{
-            font-size: 56px;
-            color: white;
-            font-family: 'Roboto', 'sans-serif';
-            margin: 0 0 0px;
-        }
-    }
-    p{
-        
-
-    }
-}
-
-#logo{
-    font-size: 350px;
-    font-weight: bold; 
-    color: $myColor;
-}
-
 .rotated{
     transform: rotateZ(-90deg);
     transform-origin: 0 0;
+}
+
+#welcome{
+    padding-top: 25vh;
+}
+
+.titles{
+    p{
+        font-size: 56px;
+        color: $txtColor;
+        font-family: 'Roboto', 'sans-serif';
+        margin: 0 0 0px;
+    }
+}
+
+.block{
+    padding:0;
+    width: 90vw;
+    height: 100vh;
+    padding-left: 10vw;
 }
